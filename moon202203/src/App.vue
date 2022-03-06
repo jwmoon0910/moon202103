@@ -1,16 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/moon.png" />
-  <Home msg="Welcome to Moon`s App" />
+  <div id="app">
+    <div id="nav">
+      <router-link to="/about">ABOUT Me</router-link> |
+      <router-link to="/btc">BTC</router-link>
+      <!-- <router-link :to="{ name: 'EventList' }">Events</router-link> | -->
+      <!-- <router-link :to="{ name: 'About' }">About</router-link> -->
+    </div>
+    <router-view />
+  </div>
 </template>
 
 <script>
-import Home from "./components/Home.vue";
-
 export default {
   name: "App",
-  components: {
-    Home,
-  },
+  components: {},
 };
 </script>
 
